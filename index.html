@@ -44,7 +44,7 @@
 <model-viewer id="mv" src="kilim.glb" ios-src="kilim.usdz"
   camera-controls touch-action="pan-y" auto-rotate rotation-per-second="12deg"
   interaction-prompt="none" shadow-intensity="0.9" exposure="1.05"
-  camera-orbit="-55deg 68deg 1.6m" min-camera-orbit="auto 0deg auto" max-camera-orbit="auto 92deg auto"
+  camera-orbit="-45deg 76deg 1.85m" min-camera-orbit="auto 0deg auto" max-camera-orbit="auto 92deg auto"
   ar ar-modes="webxr scene-viewer quick-look" ar-scale="fixed">
 </model-viewer>
 
@@ -121,7 +121,7 @@ document.getElementById('toggle').addEventListener('click',()=>{
   document.querySelectorAll('.lbl').forEach(e=>e.classList.toggle('hidden',!labelsOn));
   document.getElementById('toggle').textContent=labelsOn?'Hide labels':'Show labels';
 });
-document.getElementById('reset').addEventListener('click',()=>{mv.cameraOrbit='-55deg 68deg 1.6m';});
+document.getElementById('reset').addEventListener('click',()=>{mv.cameraOrbit='-45deg 76deg 1.85m';});
 document.getElementById('arbtn').addEventListener('click',()=>{mv.activateAR();});
 </script>
 </body>
